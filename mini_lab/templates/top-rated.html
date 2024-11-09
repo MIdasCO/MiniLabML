@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Rated Movies</title>
+</head>
+<style>
+    a{
+        background-color: aqua;
+        border-radius: 10px;
+        padding: 10px;
+        margin-left: 400px;
+    }
+</style>
+<body>
+    <h1>Top Rated Movies</h1>
+    <a href="/">Вернуться обратно</a>
+    <ul>
+        {% for movie in movies %}
+            <li>{{ movie[2] }} - Rating: {{ movie[7] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
